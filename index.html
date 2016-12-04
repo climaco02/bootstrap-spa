@@ -5,9 +5,56 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
 </head>
 <body>
-	<h2>Sobre Nós</h2>
-	<img class="img-responsive" src="img/empresa.jpg">
+	<div class="container">
+		<h2>Sobre Nós</h2>
+		<img class="img-responsive" src="img/empresa.jpg">
+
+		<div class="panel-group" id="about-panel">
+			<div class="panel panel-default">
+				<div class="panel-heading" data-toggle="collapse" data-target="#first-paragraph" data-parent="#about-panel">
+					<h3 class="panel-title">Desde 1935</h3>
+				</div>
+				<div class="panel-collapse collapse" id="first-paragraph">
+					<div class="panel-body">
+						A TopCasaFina Arquitetura está no mercado desde 1935 trazendo uma série de projetos de qualidade para seus clientes e mudando suas vidas para sempre.
+                		Nossa empresa construiu o palácio Dionísio para Don Pedro IX que ninguém nunca ouviu falar.
+					</div>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+			    <div class="panel-heading" data-toggle="collapse" data-target="#second-paragraph" data-parent="#about-panel">
+			        <h3 class="panel-title">Preços acessíveis</h3>
+			    </div>
+			    <div class="panel-collapse collapse" id="second-paragraph">
+			        <div class="panel-body"> 
+			        	Preços a partir de R$ 1000,00.
+			        </div> 
+			    </div>
+			</div>
+
+			<div class="panel panel-default">
+			    <div class="panel-heading" data-toggle="collapse" data-target="#third-paragraph" data-parent="#about-panel">
+			        <h3 class="panel-title">Alegria para colaborar com um mundo mais bonito</h3>
+			    </div>
+			    <div class="panel-collapse collapse" id="third-paragraph">
+			        <div class="panel-body">
+			        	Trazendo alegria pára a voda das pessoas que tem dinheiro para gastar
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+ 
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
