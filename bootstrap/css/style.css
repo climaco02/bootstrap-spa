@@ -9,3 +9,13 @@
     color:#FFF;
     margin-bottom: 0;
 }
+
+.radio-person-type, .select-situation-type {
+	width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.radio-person-type .radio:first-child {
+	margin-top: 0;
+}
