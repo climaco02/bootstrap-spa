@@ -155,6 +155,50 @@
 		</div>
 	</section>
 
+	<section class="container">
+		<h2>Contato</h2>
+		<p>Entre em contato conosco</p>
+
+		<form>
+			<div class="form-group">
+				<label for="name">Nome:</label>
+				<input type="text" id="name" placeholder="Seu nome" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+					<input type="text" id="email" placeholder="Seu e-mail" class="form-control">
+				</div>
+			</div>
+
+			<div class="radio-person-type">
+				<div class="radio">
+					<label>
+						<input type="radio" name="person-type" checked>
+						Pessoa Física
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="person-type">
+						Pessoa Jurídica
+					</label>
+				</div>
+			</div><!--
+
+			--><select class="form-control select-situation-type">
+				<option disabled selected>Tipo de Situação</option>
+				<option>Casa</option>
+				<option>Apartamento</option>
+				<option>Mansão</option>
+			</select>
+		</form>
+
+		<button class="btn btn-primary" type="submit">Enviar</button>
+	</section>
+
 <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
