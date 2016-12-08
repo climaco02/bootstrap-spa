@@ -40,7 +40,7 @@ header {
     background-image: url(../../img/castelo.jpg);
     background-size: cover;
     background-position:top center;
-    height: 100%;
+    height: 70%;
 }
 
 .page-title-banner {
@@ -54,6 +54,20 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s;
+}
+
+@media(min-width:992px) {
+    .page-title-banner {
+    left: 0;
+    transform: translate(0, -80%);
+    width: 50%;
+    }
+    .container 
+}
+
+.page-title-banner-wrapper {
+    position: relative;
+    height: 100%;
 }
 
 header h1 {
