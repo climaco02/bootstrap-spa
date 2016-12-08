@@ -68,3 +68,10 @@ header h1 {
     height: 100%;
     position: relative;
 }
+
+@media(min-width: 768px) {
+
+	#about-panel {
+		margin-top: 0;
+	}
+}
