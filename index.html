@@ -26,15 +26,17 @@
 					<li><a href="#projects">Nossos Projetos</a></li>
 					<li><a href="#depo">Depoimentos</a></li>
 					<li><a href="#video">Vídeo</a></li>
-					<li><a href="#add">Contato</a></li>
+					<li><a href="#contact">Contato</a></li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="page-title-banner">
-			<h1>TopCasaFina Arquitetura</h1>
-			<p>Projetando a casa dos sonhos desde 2000 A.C</p>
-			<button class="btn btn-primary btn-lg"> Contate-nos agora</button>
+		<div class="container page-title-banner-wrapper">
+			<div class="page-title-banner">
+				<h1>TopCasaFina Arquitetura</h1>
+				<p>Projetando a casa dos sonhos desde 2000 A.C</p>
+				<a href="#contact"><button class="btn btn-primary btn-lg"> Contate-nos agora</button></a>
+			</div>
 		</div>
 	</header>
 
@@ -93,7 +95,7 @@
 		<h2>Nossos Projetos</h2>
 
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="img/projetos/casa-castelo.png" alt="Foto da Casa Castelo">
 					<figcaption class="caption">
@@ -102,7 +104,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="img/projetos/casa-lago.png" alt="Foto da Casa Castelo">
 					<figcaption class="caption">
@@ -111,7 +113,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="img/projetos/mercado-marapira.png" alt="Foto da Casa Castelo">
 					<figcaption class="caption">
@@ -120,7 +122,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="img/projetos/palacio-dionisio.png" alt="Foto da Casa Castelo">
 					<figcaption class="caption">
@@ -129,7 +131,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-md-4 col-lg-3">
 				<figure class="thumbnail">
 					<img src="img/projetos/residencia-ludi.png" alt="Foto da Casa Castelo">
 					<figcaption class="caption">
@@ -189,73 +191,77 @@
 		</div>   
 	</section>
 
-	<section id="video" class="container">
-		<h2>Vídeo Institucional</h2>
-		<div class="embed-responsive embed-responsive-16by9">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
+	<div class="container">
+		<div class="row">
+			<section id="video" class="col-sm-6">
+				<h2>Vídeo Institucional</h2>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section id="contact" class="col-sm-6">
+				<h2>Contato</h2>
+				<p>Entre em contato conosco</p>
+
+				<form>
+					<div class="form-group">
+						<label for="name">Nome:</label>
+						<input type="text" id="name" placeholder="Seu nome" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<div class="input-group">
+							<div class="input-group-addon">@</div>
+							<input type="text" id="email" placeholder="Seu e-mail" class="form-control">
+						</div>
+					</div>
+
+					<div class="radio-person-type">
+						<div class="radio">
+							<label>
+								<input type="radio" name="person-type" checked>
+								Pessoa Física
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="person-type">
+								Pessoa Jurídica
+							</label>
+						</div>
+					</div><!--
+
+					--><select class="form-control select-situation-type">
+					<option disabled selected>Tipo de Situação</option>
+					<option>Casa</option>
+					<option>Apartamento</option>
+					<option>Mansão</option>
+				</select>
+				</form>
+
+				<button class="btn btn-primary" type="submit">Enviar</button>
+			</section>
 		</div>
+	</div>
+
+	<section class="container">
+		<footer>
+			<address>
+				<strong>TopCasaFina Arquitetura</strong><br>
+				Rua Vergueiro, 3185, Vila Mariana<br>
+				São Paulo, SP<br>
+				Tel: (11) 5571-2751 ou 5083-3884
+			</address>
+			<address>
+				Email: contato.topcasafina@alura.com.br
+			</address>
+		</footer>
 	</section>
 
-	<section id="contact" class="container">
-		<h2>Contato</h2>
-		<p>Entre em contato conosco</p>
-
-		<form>
-			<div class="form-group">
-				<label for="name">Nome:</label>
-				<input type="text" id="name" placeholder="Seu nome" class="form-control">
-			</div>
-
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<div class="input-group">
-					<div class="input-group-addon">@</div>
-					<input type="text" id="email" placeholder="Seu e-mail" class="form-control">
-				</div>
-			</div>
-
-			<div class="radio-person-type">
-				<div class="radio">
-					<label>
-						<input type="radio" name="person-type" checked>
-						Pessoa Física
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="person-type">
-						Pessoa Jurídica
-					</label>
-				</div>
-			</div><!--
-
-		--><select class="form-control select-situation-type">
-		<option disabled selected>Tipo de Situação</option>
-		<option>Casa</option>
-		<option>Apartamento</option>
-		<option>Mansão</option>
-	</select>
-</form>
-
-<button class="btn btn-primary" type="submit">Enviar</button>
-</section>
-
-<section id="add" class="container">
-	<footer>
-		<address>
-			<strong>TopCasaFina Arquitetura</strong><br>
-			Rua Vergueiro, 3185, Vila Mariana<br>
-			São Paulo, SP<br>
-			Tel: (11) 5571-2751 ou 5083-3884
-		</address>
-		<address>
-			Email: contato.topcasafina@alura.com.br
-		</address>
-	</footer>
-</section>
-
-<script src="bootstrap/js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/navbar-animation-fix.js"></script>
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/navbar-animation-fix.js"></script>
 </body>
 </html>
